@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<script src="validate.js">
+</script>
+
+<body bgcolor="purple" onload="startTime()" >
+<h1>Registration Form</h1>
+<div id="txt">
+    <form action="register.html" method="post" style="background-color: gray">
+        <table cellpadding="3pt">
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" name="firstName" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" name="lastName" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password1" size="30" required/></td>
+            </tr>
+ 
+            <tr>
+                <td>Confirm Password :</td>
+                <td><input type="password" name="password2" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>Male <input type="radio" name="gender" value="M" /></td>
+	            <td>Female <input type="radio" name="gender" value="F" /></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" name="mobile" size="30"  required/></td>
+            </tr>
+            <tr>
+                <td>DOB :</td>
+                <td><input type="date" name="dob" size="30" required placeholder="dd-mm-yyyy" /></td>
+            </tr>
+        </table>
+        <p />
+        <input type="submit" value="Register" />
+    </form>
+    </div>
+</body>
+</html>
