@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auction</title>
+	
+</head>
+
+<body>
+<h1 style="margin-left: 25%">Welcome to AP Auctions.Please Enter Bid.</h1><br>
+<h2 id="entry_error" style="margin-left: 30%; color:red"></h2>
+
+<form method="Post" style="margin-left:25%"  name="auctionregister" id="auctionregister" action="/com/wipro/controller/AuctionServlet">
+<table>
+	<tr>
+	<td><h3 style="color: red" id="id_error"></h3></td>
+	<td>Item Id:<input type="number" name="itemid"></td>
+	</tr>
+	
+	<tr>
+	<td><h3 style="color: red" id="iname_error"></h3></td>
+	<td>Item Name:<input type="text" name="iname"></td>
+	</tr>
+	
+	<tr>
+	<td><h3 style="color: red" id="uname_error"></h3></td>
+	<td>Your Name:<input type="text" name="uname"></td>
+	</tr>
+	
+	<tr>
+	<td><h3 style="color: red" id="email_error"></h3></td>
+	<td>Your Email Address:<input type="email" name="email"></td>
+	</tr>
+	
+	<tr>
+	<td><h3 style="color: red" id="amount_error"></h3></td>
+	<td>Amount Bid:<input type="number" name="amount"></td>
+	</tr>
+	<tr>
+	<td><td>Auto increase bid to match other bidders:<input type="checkbox" name="autobid"></td></td></tr>
+
+<tr><td></td><td><input type = "submit" name = "submit" value = "Submit Bid"  /></td></tr>
+</table>
+
+</form>
+
+</body>
+<script src="check.js">
+</script>
+</html>
