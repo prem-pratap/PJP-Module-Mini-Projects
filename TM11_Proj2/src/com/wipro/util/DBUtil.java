@@ -1,5 +1,5 @@
 package com.wipro.util;
-
+//For database connectivity 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
